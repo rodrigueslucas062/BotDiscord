@@ -1,0 +1,22 @@
+{
+  "name": "bot_discord_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "run bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigueslucas062/Discord.git"
+  },
+  "author": "Lucas Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigueslucas062/Discord/issues"
+  },
+  "homepage": "https://github.com/rodrigueslucas062/Discord#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
