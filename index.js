@@ -5,11 +5,11 @@ const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 //token de autenticação
-//const token = '';
-var config = require('./config.json');
-client.login(config.TOKEN);
+const token = '';
+//var config = require('./config.json');
+//client.login(config.TOKEN);
 
-bot.login(TOKEN)
+bot.login(token)
 bot.on('ready', () => {
     console.log('hey-hey-hey criançada')
 })
