@@ -3,18 +3,18 @@ const client = new Discord.Client();
 const config = require("./config.json")
 
 client.on("ready", () => {
-     console.log("hey-hey-hey criançada!");
-     //client.user.setGame('estou em ${client.guilds.size} servidores');
+     console.log(`hey-hey-hey criançada! Estamos em ${client.guilds.cache.size} servidores`);
+     client.user.setActivity('Meu tempo fora');
 });
 
 client.on("guildCreate", guild => {
-    console.log('O bot entrou no servidor ${guild.name} (id: {guild.id}, população: ${guild.memberCount}.');
-    client.user.setActivity("Estou em ${client.guilds.size} servidores");
+    console.log(`O bot entrou no servidor ${guild.name} (id: {guild.id}, população: ${guild.memberCount}.`);
+    client.user.setActivity(`Estou em ${client.guilds.size} servidores`);
 });
 
 client.on("guildDelete", guild => {
-    console.log('O bot foi removido do servidor ${guild.name} (id: {guild.id})');
-    client.user.setActivity("Serving ${client.guilds.size} servers");
+    console.log(`O bot foi removido do servidor ${guild.name} (id: {guild.id})`);
+    client.user.setActivity(`Serving ${client.guilds.size} servers`);
 });
 
 client.on("message", async message =>{
