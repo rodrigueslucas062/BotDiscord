@@ -32,7 +32,7 @@ client.on("message", async message =>{
         m.edit(`Ping! A latencia é ${m.createdTimestamp - message.createdTimestamp}ms. A latencia da API é ${Math.round(client.ping)}ms.`)
     }
 
-    
+
 
 });
 
