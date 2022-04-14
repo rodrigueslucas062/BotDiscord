@@ -2,7 +2,7 @@
   "name": "bot_discord_v1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "test": "run bot"
   },
