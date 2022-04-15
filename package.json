@@ -18,6 +18,7 @@
   "homepage": "https://github.com/rodrigueslucas062/Discord#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "jimp": "^0.16.1"
   }
 }

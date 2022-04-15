@@ -28,7 +28,7 @@ client.on("message", async message =>{
     
 ///estrutura para criar comando
     if (comando === "ping"){
-        const m  = await message.channel.send("Ping?")
+        const m  = await message.channel.send("Ping?")///comando para medir ping
         m.edit(`Ping! A latencia é ${m.createdTimestamp - message.createdTimestamp}ms. A latencia da API é ${Math.round(client.ping)}ms.`)
     }
 
