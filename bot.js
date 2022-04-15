@@ -1,4 +1,5 @@
 const Discord = require ('discord.js');
+const jimp = require ('jimp');
 const client = new Discord.Client();
 const config = require("./config.json")
 
@@ -31,6 +32,15 @@ client.on("message", async message =>{
         const m  = await message.channel.send("Ping?")///comando para medir ping
         m.edit(`Ping! A latencia é ${m.createdTimestamp - message.createdTimestamp}ms. A latencia da API é ${Math.round(client.ping)}ms.`)
     }
+
+    if (comando === "teste"){
+        const n  = await message.channel.send("Ping?")
+
+    ///enviar imagem quando um novo usuario entrar
+    client.on("guildMemberAdd", async member=>{
+        let canal = client.channels.get("964270593379799080")
+        let mask = await jimp.read('./img/teste')
+    })
 
 
 
