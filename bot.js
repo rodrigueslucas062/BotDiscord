@@ -48,9 +48,7 @@ client.on("message", async message =>{ ///Definindo para nao responder mensagens
                console.log("Yeah yeah! Convertido baby")
            })
        }
-
     }
-
 );
 
 client.login(config.token);

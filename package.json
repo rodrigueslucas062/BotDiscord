@@ -19,6 +19,8 @@
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^16.0.0",
-    "jimp": "^0.16.1"
+    "gif-to-apng": "^0.1.2",
+    "jimp": "^0.16.1",
+    "uuid": "^8.3.2"
   }
 }
