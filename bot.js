@@ -45,7 +45,7 @@ client.on("message", async message =>{ ///Definindo para nao responder mensagens
            directory: ("./img/Conversor"),
            download(emojilink, imagens, function(err){
                if (err) throw err
-               console.log("Yeah yeah! Convertido baby")
+               console.log("Yeah yeah! Convertido bb")
            })
        }
     }
