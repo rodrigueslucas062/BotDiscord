@@ -42,8 +42,13 @@ client.on("message", async message =>{
         let mask = await jimp.read('./img/teste')
     })
 
-
-
-});
+           directory: ("./img/Conversor"),
+           download(emojilink, imagens, function(err){
+               if (err) throw err
+               console.log("Yeah yeah! Convertido baby")
+           })
+       }
+    }
+);
 
 client.login(config.token);
